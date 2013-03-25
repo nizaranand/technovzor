@@ -282,6 +282,24 @@ blockquote{
     padding: 0 10px;
     max-width: 1200px;
 }
+
+/*-----IMAGE FLOATING-----*/
+.alignleft, img.alignleft{
+    display: inline;
+    margin: 10px 0 15px;
+    float: left;
+}
+.alignright, img.alignright{
+    display: inline;
+    margin: 10px 0 15px;
+    float: right;
+}
+.aligncenter, img.aligncenter{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*---------------|||-----SYSTEM STYLES-----|||---------------*/
 
 
@@ -339,7 +357,7 @@ blockquote{
 
 /*-----SITE FOOTER-----*/
 .footer{
-    padding: 20px 0;
+    padding: 20px 10px;
     color: #808080;
     font-size: 11px;
 }
@@ -371,8 +389,9 @@ blockquote{
     font-size: 13px;
     line-height: 1.5;
 }
-.post ul{
-    line-height: 2;
+.post ul li{
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 /*-----More information about the publication-----*/
@@ -520,6 +539,7 @@ img{
     .footer{
         text-align: center;
     }
+
 }
 
 @media(max-width: 900px){
@@ -542,5 +562,14 @@ img{
     .sidebar{
         display: none;
     }
+
+}
+
+@media(max-width: 480px){
+
+    .post p{
+        text-align: left !important;
+    }
+
 }
 /*---------------|||-----RESPONSIVE-----|||---------------*/
