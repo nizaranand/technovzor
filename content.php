@@ -1,8 +1,8 @@
 <article class="post">
-    <header>
+    <header class="post-header">
         <time class="post-info"><?php the_time('d.m.Y'); ?></time>
         <span class="post-info-marker">&bull;</span>
-        <span class="post-info"><?php the_author(); ?></span>
+        <span class="post-info"><?php the_author_posts_link(); ?></span>
         <span class="post-info-marker">&bull;</span>
         <span class="post-info"><?php the_category(' '); ?></span>
         <h2 class="post-title">
