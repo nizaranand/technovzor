@@ -11,6 +11,9 @@
     </header>
     <?php the_content(''); ?>
     <footer class="post-footer clearfix">
+        <div class="pull-left post-comments-number">
+            <?php comments_number('Комментарии (0)', 'Комментарии (1)', 'Комментарии (%)' ); ?>
+        </div>
         <div class="pull-right">
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="post-more-link">Читать далее</a>
         </div>

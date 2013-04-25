@@ -293,6 +293,10 @@ table{
     background: #ffffff;
     border-bottom: 1px solid #d7d7d7;
 }
+.header-logo{
+    padding-left: 12px;
+    float: left;
+}
 
 /*-----SITE CONTENT-----*/
 .content-wrapper{
@@ -380,6 +384,11 @@ table{
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #f0f0f0;
+}
+
+.post-comments-number{
+    padding: 10px 0;
+    color: #8a8a8a;
 }
 
 /*-----Link Read more-----*/
@@ -499,6 +508,8 @@ table{
 }
 .wdg-title{
     padding: 10px;
+    color: #8a8a8a;
+    text-transform: uppercase;
     background: #fafafa;
     border-bottom: 1px solid #f0f0f0;
     border-radius: 5px 5px 0 0;
@@ -522,10 +533,6 @@ table{
 }
 
 /*-----RANDOM POST WIDGET-----*/
-.wdg-randpost-title{
-    color: #8a8a8a;
-    text-transform: uppercase;
-}
 .wdg-randpost-content{
     padding-top: 5px;
 }
@@ -598,6 +605,12 @@ img{
 
 @media(max-width: 900px){
 
+    .header-logo{
+        padding: 0;
+        float: none;
+        text-align: center;
+    }
+
     .content-wrapper{
         margin: 0;
     }
@@ -621,8 +634,23 @@ img{
 
 @media(max-width: 480px){
 
+    .container {
+        padding: 0;
+    }
+
     .post p{
         text-align: left !important;
     }
+
+    .post ul li{
+        text-align: left !important;
+    }
+
+    .post-nav-wrapper{
+        display: none;
+    }
+
+    .wp-pagenavi .last{display: none;}
+    .wp-pagenavi .extend{display: none;}
 }
-/*---------------|||-----ERROR PAGES-----|||---------------*/
+/*---------------|||-----RESPONSIVE-----|||---------------*/

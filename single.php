@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <header class="header">
         <div class="container clearfix">
-            <div class="pull-left">
+            <div class="header-logo">
                 <a href="/" title="<?php bloginfo('name'); ?>">
                     <img src="<?php bloginfo('template_url'); ?>/img/logo.png" width="270" height="30" alt="<?php bloginfo('name'); ?>">
                 </a>

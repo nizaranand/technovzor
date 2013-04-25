@@ -23,3 +23,14 @@
         <?php wdg_randpost(); ?>
     </div>
 </div>
+<div class="wdg">
+    <div class="wdg-title">
+        <img src="<?php bloginfo('template_url'); ?>/img/wdg-icon.png" class="wdg-icon" width="18" height="18">
+        Реклама
+    </div>
+    <div class="wdg-content">
+        <a href="http://www.emulroom.com" target="_blank" rel="nofollow" title="Только олдскул, только хардкор">
+            <img src="<?php bloginfo('template_url'); ?>/adv/emulroom.png" width="310" height="500">
+        </a>
+    </div>
+</div>
