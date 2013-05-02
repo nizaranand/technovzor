@@ -26,6 +26,15 @@
 <div class="wdg">
     <div class="wdg-title">
         <img src="<?php bloginfo('template_url'); ?>/img/wdg-icon.png" class="wdg-icon" width="18" height="18">
+        Популярные метки
+    </div>
+    <div class="wdg-content">
+        <?php wp_tag_cloud('smallest=8&largest=14&number=35'); ?>
+    </div>
+</div>
+<div class="wdg">
+    <div class="wdg-title">
+        <img src="<?php bloginfo('template_url'); ?>/img/wdg-icon.png" class="wdg-icon" width="18" height="18">
         Реклама
     </div>
     <div class="wdg-content">

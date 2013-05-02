@@ -12,6 +12,7 @@
     <div class="content-wrapper">
         <main class="content">
             <?php if(have_posts()): ?>
+                <legend>Автор записей: <?php wp_list_authors("style=none"); ?></legend>
                 <?php while(have_posts()):the_post(); ?>
                     <?php get_template_part('content',get_post_format()); ?>
                 <?php endwhile; ?>

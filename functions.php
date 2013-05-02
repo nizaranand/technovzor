@@ -5,7 +5,7 @@
     add_filter('show_admin_bar','__return_false');
 
     function wdg_randpost(){
-        query_posts('orderby=rand&showposts=10');
+        query_posts('orderby=rand&showposts=5');
         if (have_posts()):
             while (have_posts()):
                 the_post(); ?>

@@ -12,7 +12,7 @@
     <div class="content-wrapper">
         <main class="content error-404">
             <h1><strong>Ошибка 404</strong></h1>
-            <h3>Запрашиваемая страница не найдена!</h3>
+            <h3>Запрашиваемая страница не найдена!</h3><br/>
             <a href="/">&larr; Вернуться на главную страницу</a>
         </main>
         <footer class="footer container">
