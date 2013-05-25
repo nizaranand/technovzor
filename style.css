@@ -222,6 +222,9 @@ table{
 .text-justify{
     text-align: justify;
 }
+.text-upper{
+    text-transform: uppercase;
+}
 
 /*-----ALIGNMENT BLOCKS-----*/
 .pull-left{
@@ -282,6 +285,46 @@ table{
 
 /*
  *
+ * UI
+ *
+ */
+
+
+/*-----FLUT BUTTON-----*/
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+    background: #149fee;
+}
+.btn:hover{
+    color: #ffffff;
+    background: #8a8a8a;
+}
+/*-----Red button----*/
+.btn.btn-red{
+    background: #eb6156;
+}
+.btn.btn-red:hover{
+    background: #8a8a8a;
+}
+/*-----Green button----*/
+.btn.btn-green{
+    background: #51a351;
+}
+.btn.btn-green:hover{
+    background: #8a8a8a;
+}
+/*---------------|||-----UI-----|||---------------*/
+
+
+
+
+
+/*
+ *
  * MAIN STYLES
  *
  */
@@ -296,6 +339,9 @@ table{
 .header-logo{
     padding-left: 12px;
     float: left;
+}
+.header-search{
+    float: right;
 }
 
 /*-----SITE CONTENT-----*/
@@ -391,20 +437,6 @@ table{
     color: #8a8a8a;
 }
 
-/*-----Link Read more-----*/
-.post-more-link{
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 14px;
-    border-radius: 3px;
-    background: #149fee;
-}
-.post-more-link:hover{
-    color: #ffffff;
-    background: #8a8a8a;
-}
-
 /*-----POST TAGS-----*/
 .post-tags{
     margin-top: 20px;
@@ -472,6 +504,7 @@ table{
 
 .wp-pagenavi{
     margin: 30px 0 20px;
+    text-align: center;
 }
 .wp-pagenavi span, .wp-pagenavi a{
     margin-right: 10px;
@@ -601,12 +634,22 @@ img{
     .footer{
         text-align: center;
     }
+
+    .wp-pagenavi{
+        text-align: center;
+    }
+    .wp-pagenavi .previouspostslink{
+        display: none;
+    }
+    .wp-pagenavi .nextpostslink{
+        display: none;
+    }
 }
 
 @media(max-width: 900px){
 
     .header-logo{
-        padding: 0;
+        padding: 0 12px;
         float: none;
         text-align: center;
     }
@@ -625,10 +668,6 @@ img{
 
     .footer{
         margin: 0;
-    }
-
-    .wp-pagenavi{
-        text-align: center;
     }
 }
 
@@ -650,7 +689,8 @@ img{
         display: none;
     }
 
-    .wp-pagenavi .last{display: none;}
-    .wp-pagenavi .extend{display: none;}
+    .wp-pagenavi .extend{
+        display: none;
+    }
 }
 /*---------------|||-----RESPONSIVE-----|||---------------*/

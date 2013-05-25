@@ -15,7 +15,7 @@
             <?php comments_number('Комментарии (0)', 'Комментарии (1)', 'Комментарии (%)' ); ?>
         </div>
         <div class="pull-right">
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="post-more-link">Читать далее</a>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="btn post-more-link">Читать далее</a>
         </div>
     </footer>
 </article>
